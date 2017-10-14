@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="FB_Email_Scraper">
+<head>
+
+  <meta charset="UTF-8">
+  <title>FB Email Scraper</title>
+  <base href="/">
+
+  <!-- FAVICON-->
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/RanRanRu.ico">
+
+  <!-- STYLESHEETS -->
+  <link rel="stylesheet" href="assets/styles/reset.css">
+  <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/styles/style.css">
+
+  <!-- & CDNs/BOWER PACKAGES-->
+  <script src="lib/angular/angular.js"></script>
+  <script src="lib/jquery/dist/jquery.min.js"></script>
+  <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- <script src="lib/angular-ui-router/release/angular-ui-router.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.js"></script>
+  <script src="lib/angular-file-saver/dist/angular-file-saver.bundle.min.js"></script>
+  <script src="lib/angular-file-upload/dist/angular-file-upload.min.js"></script>
+  <!-- <script src="lib/angular-local-storage/dist/angular-local-storage.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-local-storage/0.7.1/angular-local-storage.js"></script>
+  <script src="lib/papaparse/papaparse.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.5.1/socket.io.min.js"></script>
+  <script src="lib/es6-promise-polyfill/promise.min.js"></script>
+
+
+  <!-- ***** ANGULAR COMPONENTS  ***** -->
+  <!-- ******************************* -->
+
+  <!-- ***** APPLICATION ***** -->
+  <script src="app/app.module.js"></script>
+  <script src="app/app.config.js"></script>
+  <script src="app/app.routes.js"></script>
+  <script src="app/app.run.js"></script>
+
+  <script src="app/controllers/main.controller.js"></script>
+  <script src="app/directives/main.directive.js"></script>
+  <script src="app/directives/fileread.directive.js"></script>
+  <script src="app/services/FB_API.service.js"></script>
+  <script src="app/services/socket.service.js"></script>
+
+
+</head>
+<body>
+  <ui-view></ui-view>
+</body>
+</html>
